@@ -39,5 +39,6 @@ public class KafkaConsumer {
     ){
         ConcurrentKafkaListenerContainerFactory<String, String> factory = new ConcurrentKafkaListenerContainerFactory<>();
         factory.setConsumerFactory(consumerFactory);
+        return factory;
     }
 }
